@@ -18,7 +18,10 @@ export default function ClassesPane() {
 
   return (
     <div>
-      {courseTypes.forEach((course) =><ClassPane Course={course} CoursesList={CoursesList}/>)}
+      {/* {courseTypes.forEach(course => <div>{console.log(course.title)}</div>)} */}
+      {/* <ClassPane Course={courseTypes[0].title} CoursesList={CoursesList}/> */}
+      {courseTypes.map((course) =><ClassPane Course={course.title} CoursesList={CoursesList}/>)}
     </div>
     )
 }
+

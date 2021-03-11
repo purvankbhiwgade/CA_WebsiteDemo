@@ -1,10 +1,10 @@
 import React from 'react'
 import { Card, CardHeader, Button } from '@material-ui/core'
 import { Link } from "react-router-dom";
-import img1 from './img1.jpeg'
+import img1 from '../../../Resources/img1.jpeg'
 
 
-const Product = () => {
+function Product() {
     return (
       <Card className="classHolder">
         <img src={img1} className="CardImage" alt="Instructor" />
@@ -13,7 +13,7 @@ const Product = () => {
           <Link to="/product">Go to the Course Page</Link>
         </Button>
       </Card>
-    );
+    )
   }
 
 export default Product;

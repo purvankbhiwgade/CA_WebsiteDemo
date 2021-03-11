@@ -1,8 +1,7 @@
 import React from 'react'
-import { ComboBox} from '@material-ui/core'
-import Product from './Product'
 import ReactElasticCarousel from "react-elastic-carousel/dist/index";
-
+import Product from './Product'
+import ComboBox from './ComboBox'
 
 
 // eslint-disable-next-line react/prop-types
