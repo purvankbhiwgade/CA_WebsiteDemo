@@ -1,8 +1,6 @@
 import React from "react";
 import ClassPane from "./ClassPane/ClassPane";
 
-const CoursesList = ["Abhishek Khilwani", "Other Instructors"];
-
 export default function ClassesPane() {
   
   const courseTypes = [
@@ -15,12 +13,15 @@ export default function ClassesPane() {
     { title: "FINAL" },
     { title: "AUDIT" }
   ];
+  const CoursesList = [
+  { value: "1", label: "Abhishek Khilwani" },
+  ];
 
   return (
     <div>
       {/* {courseTypes.forEach(course => <div>{console.log(course.title)}</div>)} */}
       {/* <ClassPane Course={courseTypes[0].title} CoursesList={CoursesList}/> */}
-      {courseTypes.map((course) =><ClassPane Course={course.title} CoursesList={CoursesList}/>)}
+      {courseTypes.map((course) =><ClassPane Course={course.title} CoursesList={CoursesList} />)}
     </div>
     )
 }
